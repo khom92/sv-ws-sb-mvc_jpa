@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/crud_departamentos
+    username: postgres
+    password: 123
+    driver-class-name: org.postgresql.Driver
+
+logging:
+  level:
+    ROOT: INFO
+    org:
+      springframework:
+        web: ERROR
+        hibernate: ERROR
+  size: 1GB
+  maxHistory: 30

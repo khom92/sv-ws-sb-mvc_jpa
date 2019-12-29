@@ -1,0 +1,10 @@
+server:
+  port: 8085
+  servlet.context-path: /example
+ 
+spring:
+  profiles:
+    active: local
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties.hibernate.temp.use_jdbc_metadata_defaults: false
