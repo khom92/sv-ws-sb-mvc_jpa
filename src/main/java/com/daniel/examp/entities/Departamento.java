@@ -16,12 +16,14 @@ public class Departamento implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(name="dep_id")
 	private Integer depId;
 
 	private String nombre;
 	
+	/**
+	 * Example of Transient field
+	 */
 	@Transient
 	private Integer convertedId;
 	

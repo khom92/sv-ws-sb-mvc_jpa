@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<title>Departamento</title>
+</head>
+<body>
+    <div align="center">
+        <form action="#" th:action="@{/save}" th:object="${dep}" method="post">
+ 
+            <table id="example" class="table table-striped table-bordered"
+					border="1" style="border: 5px silver outset;">
+                <tr>
+                    <td>Id:</td>
+<!--                     FIXME: For update id shouldn't be editable. -->
+                    <td><input type="text" th:field="*{depId}" /></td>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" th:field="*{nombre}" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit">Save</button> </td>
+                </tr>
+            </table>
+            
+        </form>
+    </div>
+</body>
+</html>
